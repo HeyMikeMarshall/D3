@@ -29,3 +29,39 @@ body {
   margin: 0;
   font-size: 16px;
 }
+
+#y-active, #x-active {
+  font-weight: bold;
+  fill: #000000;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+
+#y-inactive, #x-inactive{
+  font-weight: lighter;
+  fill: darkgrey;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+#y-inactive:hover, #x-inactive:hover{
+  cursor: pointer;
+  fill: #000000;
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.tooltip {
+  position: absolute;
+  width: 135px;
+  height: 60px;
+  padding: 2px;
+  padding-top: 8px;
+  font: 12px sans-serif;
+  color: white;
+  text-align: center;
+  background: #373638;
+  border: 0;
+  border-radius: 10px;
+}
